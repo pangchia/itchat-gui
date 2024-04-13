@@ -1,5 +1,6 @@
 # Java Swing实现网页版微信桌面端增强版。
 在保证基本的微信功能外利用微信网页版API+Java Swing做成了桌面端并做了功能增强：聊天记录统计分析、好友属性监测、防撤回、自动回复、定时消息等等。
+QQ群讨论：682739021
 # 一、扩展功能介绍
 ## 1、防撤回功能
 > 语音、文字、图片、视频、...
@@ -156,9 +157,15 @@
 
 ## 5、安装jna-platform-4.4.0.jar依赖到本地仓库
 > mvn install:install-file -Dfile=wechat\src\main\resources\lib\jna-4.4.0.jar -DgroupId=com.sun -DartifactId=jna.platform -Dversion=4.4.0 -Dpackaging=jar
+# 类似项目
+itchat4j ：优秀的、基于JAVA的微信个人号API，同时也是本项目的灵感之源。
+# 问题和建议
 
+本项目长期更新、维护，功能不断扩展与完善中，欢迎star。
 
+项目使用过程中遇到问题，或者有好的建议，欢迎随时反馈。
 
+任何问题或者建议都可以在Issue中提出来，也可以加入QQ群讨论：682739021
  
 
   
