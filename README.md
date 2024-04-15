@@ -1,3 +1,4 @@
+# 已解决“您的微信不支持登录网页版微信的”问题。
 # Java Swing实现网页版微信桌面端增强版。
 在保证基本的微信功能外利用微信网页版API+Java Swing做成了桌面端并做了功能增强：聊天记录统计分析、好友属性监测、防撤回、自动回复、定时消息等等。
 QQ群讨论：682739021
@@ -127,36 +128,13 @@ QQ群讨论：682739021
   
 
 # 常见问题
-## 1、登录时提示 “由于安全原因，此微信号不能使用网页版微信...... ” 解决办法：
-> 打开微信的文件传输助手网页版并扫描登录：https://filehelper.weixin.qq.com/。
-
-> 然后你会发现你的微信号可以使用网页版微信了，神奇吧！
-> 
-## 2、登录后无法发送消息：
+## 1、登录后无法发送消息：
 > 原因：找不到lib/android.ninepatch.jar包导致
 > 
 > 解决办法：复制jar包到lib目录下。查看wechat-1.0.jar中的MANIFEST.MF中的jar包路径及名称是否一致，若不一致更改为一致。
 > 
 > ![image](https://user-images.githubusercontent.com/67832925/147431636-ac3c7697-95c9-4396-8ae0-f3a9048c6ea2.png)
 
-# 小白教程
-> 第一步：下载JAVA JDK并安装。
-
-> 第二步：下载右侧本项目release版本查看使用说明
-# 安装说明(专业人员)
-## 1、下载源代码，搭建开发环境
-## 2、安装jintellitype-1.3.9.jar依赖到本地仓库
-> 需要将resource/lib下面的二个JAR包安装到本地maven仓库，因为这个JAR经过特殊处理，中央仓库的JAR包文件不全会导致运行失败
-
-> mvn install:install-file -Dfile="你的JAR包位置" -DgroupId=com.melloware -DartifactId=jintellitype -Dversion=1.3.9 -Dpackaging=jar
-## 3、安装android.ninepatch.jar依赖到本地仓库
-> mvn install:install-file -Dfile="你的JAR包位置" -DgroupId=com.android -DartifactId=ninepatch -Dversion=1.0 -Dpackaging=jar
-
-## 4、安装jna-4.4.0.jar依赖到本地仓库
-> mvn install:install-file -Dfile=wechat\src\main\resources\lib\jna-platform-4.4.0.jar -DgroupId=com.sun -DartifactId=jna -Dversion=4.4.0 -Dpackaging=jar
-
-## 5、安装jna-platform-4.4.0.jar依赖到本地仓库
-> mvn install:install-file -Dfile=wechat\src\main\resources\lib\jna-4.4.0.jar -DgroupId=com.sun -DartifactId=jna.platform -Dversion=4.4.0 -Dpackaging=jar
 # 类似项目
 itchat4j ：优秀的、基于JAVA的微信个人号API，同时也是本项目的灵感之源。
 # 问题和建议
