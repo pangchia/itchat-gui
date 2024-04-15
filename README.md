@@ -48,7 +48,13 @@ QQ群讨论：682739021
  
 ## 1、登录
 
- ![image](https://user-images.githubusercontent.com/67832925/127840593-ad8c9bd5-3499-4fde-bf67-46c0a349b125.png)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/05c5a845-e715-456c-9531-a0f3496505ee)
+>
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/36f27669-b709-4836-b521-fcbe15855989)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/f981d147-92cb-4db6-b88b-e8fa71681058)
+
+
+
 ## 首页效果如下：
  
  ![image](https://user-images.githubusercontent.com/67832925/127836900-2dc3dfd2-8e97-40e4-961c-e060a9b22a08.png)
