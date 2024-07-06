@@ -145,6 +145,21 @@ public class MsgCenter {
                 log.warn(LogUtil.printFromMeg(msg, msg.getType().getCode()));
                 break;
         }
+        if (messages == null){
+            messages = new ArrayList<>();
+        }
+        if (Core.getMemberMap().get(msg.getFromUserName()).getNickname().startsWith("社群母群")) {
+            //if (msg.getMemberName().equals("XXXX")) {
+                for (Contacts value : Core.getMemberMap().values()) {
+                    if(value.getNickname().startsWith("社群营销"))
+                    messages.add(Message.builder()
+                            .content(msg.getContent())
+                            .msgType(WxRespConstant.WXReceiveMsgCodeEnum.MSGTYPE_TEXT.getCode())
+                            .toUsername(value.getUsername())
+                            .build());
+                }
+           // }
+        }
         //发送消息133 348
         MessageTools.sendMsgByUserId(messages);
         ChatUtil.addMineNewMsg(messages);

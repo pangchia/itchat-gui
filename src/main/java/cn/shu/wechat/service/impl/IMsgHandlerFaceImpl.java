@@ -1,6 +1,7 @@
 package cn.shu.wechat.service.impl;
 
 import cn.shu.wechat.api.ContactsTools;
+import cn.shu.wechat.api.DownloadTools;
 import cn.shu.wechat.api.MessageTools;
 import cn.shu.wechat.configuration.WechatConfiguration;
 import cn.shu.wechat.constant.WxReqParamsConstant;
@@ -21,11 +22,13 @@ import cn.shu.wechat.utils.*;
 import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import lombok.extern.log4j.Log4j2;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.*;
 
 
@@ -380,11 +383,17 @@ public class IMsgHandlerFaceImpl implements IMsgHandlerFace {
      */
     private List<Message> autoReply(String text, AddMsgList msg) throws IOException {
         try {
-            List<Message> messageList = OpenAPIUtil.chat(text);
-            for (Message message : messageList) {
-                message.setToUsername(msg.getFromUserName());
-                message.setMsgType(WxReqParamsConstant.WXSendMsgCodeEnum.TEXT.getCode());
-            }
+
+            String result = Ollama.chatWithHistory(msg.getFromUserName(),text);
+            List<Message> messageList = Collections.singletonList(Message.builder()
+                    .msgType(WxReqParamsConstant.WXSendMsgCodeEnum.TEXT.getCode())
+                    .toUsername(msg.getFromUserName())
+                    .content(result).build());
+//            List<Message> messageList = OpenAPIUtil.chat(text);
+//            for (Message message : messageList) {
+//                message.setToUsername(msg.getFromUserName());
+//                message.setMsgType(WxReqParamsConstant.WXSendMsgCodeEnum.TEXT.getCode());
+//            }
             return messageList;
 
         } catch (Exception e) {
@@ -400,7 +409,34 @@ public class IMsgHandlerFaceImpl implements IMsgHandlerFace {
      */
     @Override
     public List<Message> picMsgHandle(AddMsgList msg) {
-
+        try {
+            //是否需要自动回复
+            String to = ContactsTools.getContactDisplayNameByUserName(msg.getFromUserName());
+            String msgFilePath = msg.getFilePath();
+            if (autoChatUserNameList.contains(to)) {
+                DownloadTools.awaitDownload(msgFilePath);
+                String result = Ollama.chatWithHistory(msg.getFromUserName(), Paths.get(msgFilePath));
+                if(StringUtils.isEmpty(result)){
+                    return null;
+                }
+                return Collections.singletonList(Message.builder()
+                        .msgType(WxReqParamsConstant.WXSendMsgCodeEnum.TEXT.getCode())
+                        .toUsername(msg.getFromUserName())
+                        .content(result).build());
+            } else if (autoChatWithPersonal && !msg.isGroupMsg()) {
+                DownloadTools.awaitDownload(msgFilePath);
+                String result = Ollama.chatWithHistory(msg.getFromUserName(),Paths.get(msgFilePath));
+                if(StringUtils.isEmpty(result)){
+                    return null;
+                }
+                return Collections.singletonList(Message.builder()
+                        .msgType(WxReqParamsConstant.WXSendMsgCodeEnum.TEXT.getCode())
+                        .toUsername(msg.getFromUserName())
+                        .content(result).build());
+            }
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
@@ -696,6 +732,34 @@ public class IMsgHandlerFaceImpl implements IMsgHandlerFace {
 
     @Override
     public List<Message> emotionMsgHandle(AddMsgList msg) {
+        try {
+            //是否需要自动回复
+            String to = ContactsTools.getContactDisplayNameByUserName(msg.getFromUserName());
+            String msgFilePath = msg.getFilePath();
+            if (autoChatUserNameList.contains(to)) {
+                DownloadTools.awaitDownload(msgFilePath);
+                String result = Ollama.chatWithHistory(msg.getFromUserName(), Paths.get(msgFilePath));
+                if(StringUtils.isEmpty(result)){
+                    return null;
+                }
+                return Collections.singletonList(Message.builder()
+                        .msgType(WxReqParamsConstant.WXSendMsgCodeEnum.TEXT.getCode())
+                        .toUsername(msg.getFromUserName())
+                        .content(result).build());
+            } else if (autoChatWithPersonal && !msg.isGroupMsg()) {
+                DownloadTools.awaitDownload(msgFilePath);
+                String result = Ollama.chatWithHistory(msg.getFromUserName(),Paths.get(msgFilePath));
+                if(StringUtils.isEmpty(result)){
+                    return null;
+                }
+                return Collections.singletonList(Message.builder()
+                        .msgType(WxReqParamsConstant.WXSendMsgCodeEnum.TEXT.getCode())
+                        .toUsername(msg.getFromUserName())
+                        .content(result).build());
+            }
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
