@@ -7,7 +7,8 @@ QQ群讨论：682739021
 > 语音、文字、图片、视频、...
 > 撤回的消息里面总有惊喜！
 
-![image](https://user-images.githubusercontent.com/67832925/141230214-0101e829-97ac-4d6e-93f3-d0b841b56a90.png)
+>![image](https://github.com/youonly-once/itchat-gui/assets/67832925/9f0b3c3d-aa16-4ca4-9d64-8f3a7f4305ef)
+
 
 
 ## 2、自动回复功能
@@ -15,7 +16,8 @@ QQ群讨论：682739021
 >
 > 还会因为没有及时回复女友消息而吵架分手？
 > 
- >![image](https://user-images.githubusercontent.com/67832925/125043653-bc7a9600-e0cd-11eb-8ab5-6bc64bc13c15.png)
+ >![image](https://github.com/youonly-once/itchat-gui/assets/67832925/39ad8a0d-ebca-4746-adb3-7f11c018ecd4)
+
 ## 3、用户属性监测
  > 头像、昵称、签名、朋友圈动态、对方打开与你的聊天框、...
  > 
@@ -27,12 +29,16 @@ QQ群讨论：682739021
 ## 4、消息轰炸
 > 不能太频繁，否则会被禁言
 
->![image](https://user-images.githubusercontent.com/67832925/125042196-272ad200-e0cc-11eb-93a7-d112e89a599b.png)
+>![image](https://github.com/youonly-once/itchat-gui/assets/67832925/4bb9dbe0-7081-4224-b73e-9b06f558ae7c)
+
 ## 5、群成员统计功能
 > 性别、城市、活跃度、...
 > 
-![image](https://user-images.githubusercontent.com/67832925/125046255-6ce99980-e0d0-11eb-938e-256e70d458c3.png)![image](https://user-images.githubusercontent.com/67832925/125046015-2eec7580-e0d0-11eb-849d-e5350bf79504.png)![image](https://user-images.githubusercontent.com/67832925/125046044-390e7400-e0d0-11eb-971d-bec954ea1424.png)![image](https://user-images.githubusercontent.com/67832925/125046064-3e6bbe80-e0d0-11eb-8860-9a9e8c3a3630.png)
-![image](https://user-images.githubusercontent.com/67832925/141230943-75a13544-53d3-43a2-944f-403a324c1727.png)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/31b7d2c8-f16e-4fe3-9c3b-a84cc7055a84)
+
+
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/639f3f96-95d4-4d66-bb2c-f47bf40b9468)
+
 
 ## 6、共同好友的聊天记录截获
 ## 7、定时消息、消息定时撤回
@@ -48,10 +54,13 @@ QQ群讨论：682739021
  
 ## 1、登录
 
-![image](https://github.com/youonly-once/itchat-gui/assets/67832925/05c5a845-e715-456c-9531-a0f3496505ee)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/1b9efbe1-6cf1-4aef-bb7e-dc68cd6a3ffb)
+
 >
-![image](https://github.com/youonly-once/itchat-gui/assets/67832925/36f27669-b709-4836-b521-fcbe15855989)
-![image](https://github.com/youonly-once/itchat-gui/assets/67832925/f981d147-92cb-4db6-b88b-e8fa71681058)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/f1367b0b-9036-4123-b6ba-f03a54cbf3d9)
+
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/e244cfae-5b30-43d7-830b-81587a920317)
+
 
 
 
