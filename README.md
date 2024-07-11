@@ -1,13 +1,14 @@
 # 已解决“您的微信不支持登录网页版微信的”问题。
 # Java Swing实现网页版微信桌面端增强版。
 在保证基本的微信功能外利用微信网页版API+Java Swing做成了桌面端并做了功能增强：聊天记录统计分析、好友属性监测、防撤回、自动回复、定时消息等等。
-QQ群讨论：682739021
-# 一、扩展功能介绍
+
+# QQ群讨论：682739021
+# 一、扩展功能介绍(部分)
 ## 1、防撤回功能
 > 语音、文字、图片、视频、...
 > 撤回的消息里面总有惊喜！
 
->![image](https://github.com/youonly-once/itchat-gui/assets/67832925/9f0b3c3d-aa16-4ca4-9d64-8f3a7f4305ef)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/9f0b3c3d-aa16-4ca4-9d64-8f3a7f4305ef)
 
 
 
@@ -16,20 +17,20 @@ QQ群讨论：682739021
 >
 > 还会因为没有及时回复女友消息而吵架分手？
 > 
- >![image](https://github.com/youonly-once/itchat-gui/assets/67832925/39ad8a0d-ebca-4746-adb3-7f11c018ecd4)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/39ad8a0d-ebca-4746-adb3-7f11c018ecd4)
 
 ## 3、用户属性监测
  > 头像、昵称、签名、朋友圈动态、对方打开与你的聊天框、...
  > 
  > 想象一下你的女神改个签名、发个朋友圈都会通知你并及时给予必要的关心，搞到手不是迟早的事？
  > 
- > ![image](https://user-images.githubusercontent.com/67832925/125041412-51c85b00-e0cb-11eb-9251-fc038bab3c2e.png)![image](https://user-images.githubusercontent.com/67832925/125045236-58f16800-e0cf-11eb-9de8-a8d261464e38.png)
+![image](https://user-images.githubusercontent.com/67832925/125041412-51c85b00-e0cb-11eb-9251-fc038bab3c2e.png)![image](https://user-images.githubusercontent.com/67832925/125045236-58f16800-e0cf-11eb-9de8-a8d261464e38.png)
 
 
 ## 4、消息轰炸
 > 不能太频繁，否则会被禁言
 
->![image](https://github.com/youonly-once/itchat-gui/assets/67832925/4bb9dbe0-7081-4224-b73e-9b06f558ae7c)
+![image](https://github.com/youonly-once/itchat-gui/assets/67832925/4bb9dbe0-7081-4224-b73e-9b06f558ae7c)
 
 ## 5、群成员统计功能
 > 性别、城市、活跃度、...
@@ -46,17 +47,15 @@ QQ群讨论：682739021
 
 ## 8、好友分析
 > 所有公开信息的分析
-> 
 ![image](https://user-images.githubusercontent.com/67832925/147428522-bba71347-6f04-4e47-b1b8-b700331f87c2.png)
 
 
- # 二、界面预览
+ # 二、界面预览(部分)
  
 ## 1、登录
 
 ![image](https://github.com/youonly-once/itchat-gui/assets/67832925/1b9efbe1-6cf1-4aef-bb7e-dc68cd6a3ffb)
 
->
 ![image](https://github.com/youonly-once/itchat-gui/assets/67832925/f1367b0b-9036-4123-b6ba-f03a54cbf3d9)
 
 ![image](https://github.com/youonly-once/itchat-gui/assets/67832925/e244cfae-5b30-43d7-830b-81587a920317)
