@@ -4,4 +4,4 @@ spring:
   application:
     name: autowechat
   profiles:
-    active: @spring-profiles-active@
+    active: dev

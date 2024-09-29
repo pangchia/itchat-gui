@@ -19,7 +19,7 @@ public class WechatConfiguration {
     /**
      * 是否模糊头像
      */
-    private Boolean fuzzUpAvatar;
+    private Boolean fuzzUpAvatar = true;
     private static WechatConfiguration instance;
 
     public WechatConfiguration() {
