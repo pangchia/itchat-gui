@@ -168,9 +168,10 @@ public class LoginServiceImpl implements LoginService {
             params.add(new BasicNameValuePair(WxReqParamsConstant.LoginParaEnum.R.para(), String.valueOf(millis / 1579L)));
             params.add(new BasicNameValuePair(WxReqParamsConstant.LoginParaEnum._.para(), String.valueOf(millis)));
             HttpEntity entity = HttpUtil.doGet(WxURLEnum.LOGIN_URL.getUrl(), params, true, null);
-
+            
             try {
                 String result = EntityUtils.toString(entity);
+                log.info("{} result:{}",WxURLEnum.LOGIN_URL.getUrl(), result);
                 WxRespConstant.CheckLoginResultCodeEnum codeEnum = checkQRCodeScanStatus(result);
                 switch (codeEnum) {
 
